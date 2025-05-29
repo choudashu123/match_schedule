@@ -4,7 +4,6 @@ import axios from "axios";
 
 export async function GET() {
   const date = new Date().toISOString().split("T")[0]
-  console.log(new Date())
   try {
     const response = await axios.get("https://v3.football.api-sports.io/fixtures", {
       headers: {
